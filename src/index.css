@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container-clinic {
+  @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-10;
+}
+
+.section-pad {
+  @apply py-16 md:py-24;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.18em] uppercase text-primary bg-clinic-mist px-3 py-1.5 rounded-full;
+}
+
+.btn-clinic-primary {
+  @apply btn bg-primary hover:bg-[#0B5670] text-white border-none rounded-full px-6 shadow-soft;
+}
+
+.btn-clinic-outline {
+  @apply btn btn-outline border-primary text-primary hover:bg-primary hover:text-white rounded-full px-6;
+}
+
+.card-clinic {
+  @apply bg-white rounded-3xl shadow-card border border-clinic-mist p-7 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-soft;
+}
+
+/* Visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #4FB3D9;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
