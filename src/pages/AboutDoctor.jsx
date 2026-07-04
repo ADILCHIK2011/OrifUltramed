@@ -50,7 +50,7 @@ export default function AboutDoctor() {
             <div className="relative mx-auto max-w-sm">
               <div className="aspect-[4/5] rounded-[2.5rem] bg-white border border-clinic-mist shadow-soft flex items-center justify-center overflow-hidden">
                 <span className="text-clinic-muted text-sm text-center px-8">
-                  [ Shifokor profil surati uchun joy ]
+                  <img src="https://i.postimg.cc/vTR4jhBn/6d64de46-f483-4a0e-b5fc-774a77fa60c6.jpg" alt="" />
                 </span>
               </div>
               <span className="absolute -bottom-5 -left-5 h-16 w-16 rounded-2xl bg-primary flex items-center justify-center text-white shadow-soft">

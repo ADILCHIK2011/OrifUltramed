@@ -180,7 +180,7 @@ export default function Home() {
           <ScrollReveal delay={0.15}>
             <div className="aspect-[4/3] rounded-[2rem] bg-clinic-mist border border-clinic-mist flex items-center justify-center overflow-hidden">
               <span className="text-clinic-muted text-sm px-8 text-center">
-                [ Klinika interyeri / shifokor surati uchun joy ]
+                <img src="https://i.postimg.cc/nrsXS5pL/91c53a73-9420-4c35-8c19-a73da117a20b.jpg" alt="" />
               </span>
             </div>
           </ScrollReveal>
