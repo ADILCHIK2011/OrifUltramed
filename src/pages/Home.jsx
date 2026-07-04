@@ -7,6 +7,7 @@ import {
   HiOutlineBadgeCheck,
   HiOutlinePhone,
   HiOutlineLocationMarker,
+  HiOutlineCheckCircle,
 } from 'react-icons/hi'
 import PulseWave from '../components/PulseWave.jsx'
 import ScrollReveal from '../components/ScrollReveal.jsx'
@@ -108,22 +109,34 @@ export default function Home() {
             <div className="relative mx-auto max-w-md">
               <div className="relative rounded-[2.5rem] bg-white shadow-soft border border-clinic-mist p-8 overflow-hidden">
                 <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-primary/10" />
+ 
                 <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
-                  Jonli Doppler ko'rinishi
+                  Namunaviy tekshiruv natijasi
                 </p>
                 <p className="font-display font-bold text-clinic-ink text-xl mb-6">
-                  Yurak urishi monitoringi
+                  Oshqozon osti bezi skanerlash
                 </p>
-                <PulseWave color="#0F6E8C" height={90} />
+ 
+                <div className="aspect-[4/3] rounded-2xl bg-clinic-mist flex items-center justify-center overflow-hidden">
+                  <span className="text-clinic-muted text-xs text-center px-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvwEL9kNhLsGtCXlkg9kE8Yu2sJ2po3E-XRozz73BklA&s=10" alt="" />
+                  </span>
+                </div>
+ 
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="rounded-2xl bg-clinic-mist p-4">
-                    <p className="text-2xl font-display font-bold text-primary">142</p>
-                    <p className="text-xs text-clinic-muted">BPM (namuna)</p>
+                    <p className="text-2xl font-display font-bold text-primary">22 mm</p>
+                    <p className="text-xs text-clinic-muted">Bosh qismi (me'yorda)</p>
                   </div>
                   <div className="rounded-2xl bg-clinic-mist p-4">
-                    <p className="text-2xl font-display font-bold text-primary">A+</p>
-                    <p className="text-xs text-clinic-muted">Tekshiruv sifati</p>
+                    <p className="text-2xl font-display font-bold text-primary">Bir xil</p>
+                    <p className="text-xs text-clinic-muted">Struktura holati</p>
                   </div>
+                </div>
+ 
+                <div className="flex items-center gap-2 mt-5 text-sm">
+                  <HiOutlineCheckCircle className="text-accent text-lg shrink-0" />
+                  <span className="text-clinic-ink font-medium">Xulosa: patologik o'zgarishlar aniqlanmadi</span>
                 </div>
               </div>
             </div>
